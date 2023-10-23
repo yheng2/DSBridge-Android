@@ -1,0 +1,7 @@
+jdk:
+  - openjdk8
+before_install:
+  - ./scripts/prepareJitpackEnvironment.sh
+install:
+  - FILE="-Dfile=dsbridge-release.aar"
+  - mvn install:install-file $FILE -DgroupId=com.github.yheng2 -DartifactId=DSBridge-Android -Dversion=3.0.1 -Dpackaging=aar -DgeneratePom=true
