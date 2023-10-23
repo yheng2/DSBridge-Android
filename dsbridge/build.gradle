@@ -45,6 +45,13 @@ publishing {
             groupId = 'com.github.yheng2'
             artifactId = 'dsbridge-release'
             version = '3.0.1'
+            pom {
+                description = 'DSBridge Library'
+            }
+
         }
+    }
+    repositories {               // << --- ADD This
+        mavenLocal()
     }
 }
